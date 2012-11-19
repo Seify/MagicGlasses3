@@ -273,7 +273,8 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     glDisable(GL_DEPTH_TEST);
     glDisable(GL_BLEND);
     
-    GLuint currentProgram = [[ResourceManager sharedInstance] getProgram:PROGRAM_SIMPLE_TEXTURING];
+//    GLuint currentProgram = [[ResourceManager sharedInstance] getProgram:PROGRAM_SIMPLE_TEXTURING];
+    GLuint currentProgram = [[ResourceManager sharedInstance] getProgram:PROGRAM_DRAW_VIDEO_FRAME];
     glUseProgram(currentProgram);
     
     GLfloat modelviewProj[16];
@@ -285,7 +286,8 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
             Rotation:0.0];
     
     // update uniform values
-    glUniformMatrix4fv(simple_texturing_uniforms[SIMPLE_TEXTURING_UNIFORM_MODEL_VIEW_PROJECTION_MATRIX], 1, GL_FALSE, modelviewProj);
+//    glUniformMatrix4fv(simple_texturing_uniforms[SIMPLE_TEXTURING_UNIFORM_MODEL_VIEW_PROJECTION_MATRIX], 1, GL_FALSE, modelviewProj);
+    glUniformMatrix4fv(draw_video_frame_uniforms[DRAW_VIDEO_FRAME_UNIFORM_MODEL_VIEW_PROJECTION_MATRIX], 1, GL_FALSE, modelviewProj);
     
     if (videoTexture)
     {
@@ -293,15 +295,24 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
         //    glBindTexture(GL_TEXTURE_2D, backgroundTexture.name);
         
         glBindTexture(CVOpenGLESTextureGetTarget(videoTexture), CVOpenGLESTextureGetName(videoTexture));
-        glUniform1i(simple_texturing_uniforms[SIMPLE_TEXTURING_UNIFORM_TEXTURE], 0);
+//        glUniform1i(simple_texturing_uniforms[SIMPLE_TEXTURING_UNIFORM_TEXTURE], 0);
+        glUniform1i(draw_video_frame_uniforms[DRAW_VIDEO_FRAME_UNIFORM_TEXTURE], 0);
+        
     }
     
     
-    glVertexAttribPointer(SIMPLE_TEXTURING_ATTRIB_VERTEX,3, GL_FLOAT, GL_FALSE, sizeof(vertexDataTextured), &plain[0].vertex);
-    glEnableVertexAttribArray(SIMPLE_TEXTURING_ATTRIB_VERTEX);
+//    glVertexAttribPointer(SIMPLE_TEXTURING_ATTRIB_VERTEX,3, GL_FLOAT, GL_FALSE, sizeof(vertexDataTextured), &plain[0].vertex);
+//    glEnableVertexAttribArray(SIMPLE_TEXTURING_ATTRIB_VERTEX);
+//    
+//    glVertexAttribPointer(SIMPLE_TEXTURING_ATTRIB_TEX_COORDS, 2, GL_FLOAT, GL_FALSE, sizeof(vertexDataTextured), &plain[0].texCoord);
+//    glEnableVertexAttribArray(SIMPLE_TEXTURING_ATTRIB_TEX_COORDS);
+
+    glVertexAttribPointer(DRAW_VIDEO_FRAME_ATTRIB_VERTEX,3, GL_FLOAT, GL_FALSE, sizeof(vertexDataTextured), &plain[0].vertex);
+    glEnableVertexAttribArray(DRAW_VIDEO_FRAME_ATTRIB_VERTEX);
     
-    glVertexAttribPointer(SIMPLE_TEXTURING_ATTRIB_TEX_COORDS, 2, GL_FLOAT, GL_FALSE, sizeof(vertexDataTextured), &plain[0].texCoord);
-    glEnableVertexAttribArray(SIMPLE_TEXTURING_ATTRIB_TEX_COORDS);
+    glVertexAttribPointer(DRAW_VIDEO_FRAME_ATTRIB_TEX_COORDS, 2, GL_FLOAT, GL_FALSE, sizeof(vertexDataTextured), &plain[0].texCoord);
+    glEnableVertexAttribArray(DRAW_VIDEO_FRAME_ATTRIB_TEX_COORDS);
+
     
     glDrawArrays(GL_TRIANGLES, 0, 6);
     

@@ -20,6 +20,14 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>Shaders/DrawVideoFrameShader.fsh</key>
+		<data>
+		iXOVO5Jp6HpTTdxWxcrhJ0kXKQ8=
+		</data>
+		<key>Shaders/DrawVideoFrameShader.vsh</key>
+		<data>
+		IENNpr/Hc24kRjIq0VmARzqjLh0=
+		</data>
 		<key>Shaders/SimpleTexturingShader.fsh</key>
 		<data>
 		dEcvshjsfKqTiaFuCuEnhAydi4E=
