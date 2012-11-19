@@ -1,8 +1,8 @@
 //
 //  MGAppDelegate.h
-//  MagicGlasses3
+//  MagicGlasses2
 //
-//  Created by Roman Smirnov on 19.11.12.
+//  Created by Roman Smirnov on 18.11.12.
 //  Copyright (c) 2012 Roman Smirnov. All rights reserved.
 //
 

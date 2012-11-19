@@ -1,8 +1,8 @@
 //
 //  MGAppDelegate.m
-//  MagicGlasses3
+//  MagicGlasses2
 //
-//  Created by Roman Smirnov on 19.11.12.
+//  Created by Roman Smirnov on 18.11.12.
 //  Copyright (c) 2012 Roman Smirnov. All rights reserved.
 //
 
@@ -34,7 +34,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

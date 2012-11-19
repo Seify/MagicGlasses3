@@ -18,11 +18,17 @@
 		B1EE7CD6165AC59B00E6CACC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CD5165AC59B00E6CACC /* Default.png */; };
 		B1EE7CD8165AC59B00E6CACC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CD7165AC59B00E6CACC /* Default@2x.png */; };
 		B1EE7CDA165AC59B00E6CACC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CD9165AC59B00E6CACC /* Default-568h@2x.png */; };
-		B1EE7CDC165AC59B00E6CACC /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CDB165AC59B00E6CACC /* Shader.fsh */; };
-		B1EE7CDE165AC59B00E6CACC /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CDD165AC59B00E6CACC /* Shader.vsh */; };
 		B1EE7CE1165AC59B00E6CACC /* MGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EE7CE0165AC59B00E6CACC /* MGViewController.m */; };
 		B1EE7CE4165AC59B00E6CACC /* MGViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CE2165AC59B00E6CACC /* MGViewController_iPhone.xib */; };
 		B1EE7CE7165AC59B00E6CACC /* MGViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CE5165AC59B00E6CACC /* MGViewController_iPad.xib */; };
+		B1EE7CF8165AC60B00E6CACC /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = B1EE7CED165AC60B00E6CACC /* matrix.c */; };
+		B1EE7CFA165AC60B00E6CACC /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EE7CF4165AC60B00E6CACC /* ResourceManager.m */; };
+		B1EE7CFB165AC60B00E6CACC /* Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EE7CF7165AC60B00E6CACC /* Texture.m */; };
+		B1EE7CFD165AC68E00E6CACC /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7CFC165AC68E00E6CACC /* Shaders */; };
+		B1EE7CFF165AC6CE00E6CACC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EE7CFE165AC6CE00E6CACC /* AVFoundation.framework */; };
+		B1EE7D01165AC6D700E6CACC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EE7D00165AC6D700E6CACC /* CoreVideo.framework */; };
+		B1EE7D03165AC6DF00E6CACC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EE7D02165AC6DF00E6CACC /* CoreMedia.framework */; };
+		B1EE7D05165ACA7600E6CACC /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = B1EE7D04165ACA7500E6CACC /* Textures */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +47,24 @@
 		B1EE7CD5165AC59B00E6CACC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B1EE7CD7165AC59B00E6CACC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B1EE7CD9165AC59B00E6CACC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B1EE7CDB165AC59B00E6CACC /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		B1EE7CDD165AC59B00E6CACC /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		B1EE7CDF165AC59B00E6CACC /* MGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGViewController.h; sourceTree = "<group>"; };
 		B1EE7CE0165AC59B00E6CACC /* MGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGViewController.m; sourceTree = "<group>"; };
 		B1EE7CE3165AC59B00E6CACC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MGViewController_iPhone.xib; sourceTree = "<group>"; };
 		B1EE7CE6165AC59B00E6CACC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MGViewController_iPad.xib; sourceTree = "<group>"; };
+		B1EE7CED165AC60B00E6CACC /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = matrix.c; path = ../../MagicGlasses2/matrix.c; sourceTree = "<group>"; };
+		B1EE7CEE165AC60B00E6CACC /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = ../../MagicGlasses2/matrix.h; sourceTree = "<group>"; };
+		B1EE7CEF165AC60B00E6CACC /* ModelDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelDataStructures.h; path = ../../MagicGlasses2/ModelDataStructures.h; sourceTree = "<group>"; };
+		B1EE7CF0165AC60B00E6CACC /* models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = models.h; path = ../../MagicGlasses2/models.h; sourceTree = "<group>"; };
+		B1EE7CF3165AC60B00E6CACC /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = ../../MagicGlasses2/ResourceManager.h; sourceTree = "<group>"; };
+		B1EE7CF4165AC60B00E6CACC /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResourceManager.m; path = ../../MagicGlasses2/ResourceManager.m; sourceTree = "<group>"; };
+		B1EE7CF5165AC60B00E6CACC /* ResourcesConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourcesConstants.h; path = ../../MagicGlasses2/ResourcesConstants.h; sourceTree = "<group>"; };
+		B1EE7CF6165AC60B00E6CACC /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = ../../MagicGlasses2/Texture.h; sourceTree = "<group>"; };
+		B1EE7CF7165AC60B00E6CACC /* Texture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Texture.m; path = ../../MagicGlasses2/Texture.m; sourceTree = "<group>"; };
+		B1EE7CFC165AC68E00E6CACC /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
+		B1EE7CFE165AC6CE00E6CACC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B1EE7D00165AC6D700E6CACC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B1EE7D02165AC6DF00E6CACC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B1EE7D04165ACA7500E6CACC /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1EE7D03165AC6DF00E6CACC /* CoreMedia.framework in Frameworks */,
+				B1EE7D01165AC6D700E6CACC /* CoreVideo.framework in Frameworks */,
+				B1EE7CFF165AC6CE00E6CACC /* AVFoundation.framework in Frameworks */,
 				B1EE7CC0165AC59B00E6CACC /* UIKit.framework in Frameworks */,
 				B1EE7CC2165AC59B00E6CACC /* Foundation.framework in Frameworks */,
 				B1EE7CC4165AC59B00E6CACC /* CoreGraphics.framework in Frameworks */,
@@ -85,6 +106,9 @@
 		B1EE7CBE165AC59B00E6CACC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1EE7D02165AC6DF00E6CACC /* CoreMedia.framework */,
+				B1EE7D00165AC6D700E6CACC /* CoreVideo.framework */,
+				B1EE7CFE165AC6CE00E6CACC /* AVFoundation.framework */,
 				B1EE7CBF165AC59B00E6CACC /* UIKit.framework */,
 				B1EE7CC1165AC59B00E6CACC /* Foundation.framework */,
 				B1EE7CC3165AC59B00E6CACC /* CoreGraphics.framework */,
@@ -97,10 +121,19 @@
 		B1EE7CC9165AC59B00E6CACC /* MagicGlasses3 */ = {
 			isa = PBXGroup;
 			children = (
+				B1EE7D04165ACA7500E6CACC /* Textures */,
+				B1EE7CFC165AC68E00E6CACC /* Shaders */,
+				B1EE7CED165AC60B00E6CACC /* matrix.c */,
+				B1EE7CEE165AC60B00E6CACC /* matrix.h */,
+				B1EE7CEF165AC60B00E6CACC /* ModelDataStructures.h */,
+				B1EE7CF0165AC60B00E6CACC /* models.h */,
+				B1EE7CF3165AC60B00E6CACC /* ResourceManager.h */,
+				B1EE7CF4165AC60B00E6CACC /* ResourceManager.m */,
+				B1EE7CF5165AC60B00E6CACC /* ResourcesConstants.h */,
+				B1EE7CF6165AC60B00E6CACC /* Texture.h */,
+				B1EE7CF7165AC60B00E6CACC /* Texture.m */,
 				B1EE7CD2165AC59B00E6CACC /* MGAppDelegate.h */,
 				B1EE7CD3165AC59B00E6CACC /* MGAppDelegate.m */,
-				B1EE7CDB165AC59B00E6CACC /* Shader.fsh */,
-				B1EE7CDD165AC59B00E6CACC /* Shader.vsh */,
 				B1EE7CDF165AC59B00E6CACC /* MGViewController.h */,
 				B1EE7CE0165AC59B00E6CACC /* MGViewController.m */,
 				B1EE7CE2165AC59B00E6CACC /* MGViewController_iPhone.xib */,
@@ -180,10 +213,10 @@
 				B1EE7CD6165AC59B00E6CACC /* Default.png in Resources */,
 				B1EE7CD8165AC59B00E6CACC /* Default@2x.png in Resources */,
 				B1EE7CDA165AC59B00E6CACC /* Default-568h@2x.png in Resources */,
-				B1EE7CDC165AC59B00E6CACC /* Shader.fsh in Resources */,
-				B1EE7CDE165AC59B00E6CACC /* Shader.vsh in Resources */,
 				B1EE7CE4165AC59B00E6CACC /* MGViewController_iPhone.xib in Resources */,
 				B1EE7CE7165AC59B00E6CACC /* MGViewController_iPad.xib in Resources */,
+				B1EE7CFD165AC68E00E6CACC /* Shaders in Resources */,
+				B1EE7D05165ACA7600E6CACC /* Textures in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +230,9 @@
 				B1EE7CD0165AC59B00E6CACC /* main.m in Sources */,
 				B1EE7CD4165AC59B00E6CACC /* MGAppDelegate.m in Sources */,
 				B1EE7CE1165AC59B00E6CACC /* MGViewController.m in Sources */,
+				B1EE7CF8165AC60B00E6CACC /* matrix.c in Sources */,
+				B1EE7CFA165AC60B00E6CACC /* ResourceManager.m in Sources */,
+				B1EE7CFB165AC60B00E6CACC /* Texture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
